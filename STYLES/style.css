@@ -1,0 +1,88 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For Smashing Magazine
+ * July 2011
+ *
+ * Author: Richard Shepherd
+ *		   www.richardshepherd.com
+ * 		   @richardshepherd
+ */
+
+body { font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; text-shadow: 0px -1px 0px black;}
+header.fixed { background-color: rgb(255,255,255); height:20px; padding:10px 0pt 20px; position:fixed; top:0pt; width:100%; z-index:99999; border-bottom: 1px solid #DDD;}
+header.fixed .content { margin:0 auto; padding-left:10%; position:relative; width:1100px;}
+p {  font-size:16px;}
+h1 { font-size: 24px; text-align: center; color: #EC0A49}
+article h2 { font-family: 'Open Sans'; font-size: 42px; margin: 25px 0; line-height: 1em; }
+strong {font-family:'Open Sans', arial;}
+
+.story { height: 900px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+
+.menudescriptor { width:70px; height:28px; float:left; margin-right:20px; line-height:12px; color:#CCC; font-family:'Arial', sans-serif; font-weight:700; font-size:11px; padding-top:2px; text-shadow:none;}
+.menu { width:600px; height:30px; background:url(../images/menubg.jpg) top left no-repeat; float:left;}
+
+/* IMAGENES DE FONDO */
+#first { background: url(../IMGS/bg-00.jpg) 50% -1440px no-repeat fixed; }
+#second { background: url(../IMGS/bg-03.jpg) 50% top no-repeat fixed; }
+#third { background: url(../IMGS/bg-01.jpg) 50% 0 no-repeat fixed; }
+#fourth { background: url(../IMGS/bg-04.jpg) 50% top no-repeat fixed; }
+#fifth { background: url(../IMGS/bg-01.jpg) 50% bottom no-repeat fixed; }
+
+/* PRESENTACION */
+#first .FreBoglogo { background: url(../IMGS/frebog.png) 50% 10px no-repeat fixed; min-height: 900px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; z-index:10;}
+#first article { width: 100%; top: 360px; position: absolute; text-align: center; }
+#first article p,
+#first article a { font-size:12px; color: #000; margin-top:200px; line-height:-0.25em; text-shadow:none;}
+#first article a:hover { color: #006699; text-decoration:none;}
+#first h2 { font-family:'Open Sans', arial; margin-bottom:0px; text-shadow:none;}
+
+/* SALUDO BIENVENIDA */
+#second article { background: url(../IMGS/grain.png) repeat #333; color: #fff; width: 460px; margin: 8% 0 0  14%; padding: 10px 30px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); position:absolute;}
+#second article p { margin-bottom: 25px; line-height:1.15em; }
+#second article a {	color: #99FF00;}
+#second h2 { font-family:'Open Sans', arial;}
+
+/* CONTENIDO
+#third article { background: url(../images/grain.png) repeat #333; color: #fff; padding: 10px 30px; margin: 5% 0 0 14%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#third .photograph { background: absolute(../images/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#third article p { width: 460px; margin-bottom: 25px; }
+#third h2 { font-family:'Open Sans', arial;}*/
+
+#third article { background: url(../images/grain.png) repeat #333; color: #fff; width: 1024px; margin: 5% 14.25% 0; padding: 10px 30px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); min-height:570px; position:absolute;}
+#third article a { font-size:10px; color: #777; margin-left:5px;}
+#third h2 { font-family:'Open Sans', arial;}
+#third .mapa { width:520px; position:relative; margin-bottom:20px; padding: 4px 15px; border:1px solid #000000; float:left; margin-top:15px;}
+#third .mapa p {font-size:12px; color:#CCFF00;}
+#third .mapinfo { width:326px; float:left; margin-top:15px; margin-bottom:10px; margin-left:10px; position:relative; padding: 4px 15px; border:1px solid #666; height:444px; text-align:left;}
+#third .mapinfo h3 { font-size:36px; color:#CCFF00; margin-top:24px;}
+#third .mapinfo h4 { font-size:18px; color:#CCFF00; margin-top:18px; border-top:1px solid #999999; padding-top:10px; margin-bottom:10px;}
+#third .mapinfo p { font-size:11px; color:#FFFFFF; margin-top:6px; width: 100%;}
+#third .mapinfo ul { list-style:none; margin-left:0px; font-family:'Open Sans', sans serif;}
+#third .mapinfo li { list-style: none; line-height:11px; margin-left:0px; margin-bottom:4px; padding-bottom:4px; border-bottom:1px #555 solid;}
+
+
+/* OBJETIVOS */
+#fourth article { background: url(../images/grain.png) repeat #333; width:920px; color: #fff; padding: 10px 30px; margin: 8% 0 0 14%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#fourth ul, ol, { width:900px;}
+#fourth li { list-style: square; margin-bottom:25px; padding-bottom:10px; border-bottom:#777 1px dotted; width:400px; margin-left:-10px; font-size:14px; line-height:1.5em;}
+#fourth h2 { font-family:'Open Sans', arial;}
+
+
+/* CIERRE */
+#fifth article { background: url(../images/grain.png) repeat #333; color: #fff; width: 1024px; margin: 5% 14.25% 0; padding: 10px 30px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); min-height:570px; position:absolute;}
+#fifth article a { font-size:10px; color: #777; margin-left:5px;}
+#fifth h2 { font-family:'Open Sans', arial;}
+#fifth .mapa_2 { width:980px; position:relative; margin-bottom:20px; padding: 4px 15px; border:1px solid #000000; float:left; margin-top:15px;}
+#fifth .mapa_2 p {font-size:12px; color:#CCFF00;}
+
+/* TEAM */
+#sixth article { background: url(../images/grain.png) repeat #333; color: #fff; padding: 10px 30px; margin: 8% 0 0 14%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#sixth ul, ol, { width:460px;}
+#sixth li { list-style: square; margin-bottom:25px; padding-bottom:10px; border-bottom:#777 1px dotted; width:400px; margin-left:-10px; font-size:14px; line-height:1.5em;}
+#sixth h2 { font-family:'Open Sans', arial;}
+
+/* FOOTER */
+#seventh article { background: url(../images/grain.png) repeat #333; color: #fff; padding: 10px 30px; margin: 8% 0 0 14%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#seventh ul, ol, { width:460px;}
+#seventh li { list-style: square; margin-bottom:25px; padding-bottom:10px; border-bottom:#777 1px dotted; width:400px; margin-left:-10px; font-size:14px; line-height:1.5em;}
+#seventh h2 { font-family:'Open Sans', arial;}
